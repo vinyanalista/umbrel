@@ -46,3 +46,6 @@ app-data/*
 !logs/.gitkeep
 !tor/data/.gitkeep
 !tor/run/.gitkeep
+
+# Email configuration
+scripts/backup/email-config
