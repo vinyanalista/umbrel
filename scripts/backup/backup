@@ -108,6 +108,7 @@ then
     done < "${EMAIL_CONFIG}"
 
     echo "" | mailx -r "${EMAIL_FROM}" -s "${EMAIL_SUBJECT}" -a "${BACKUP_FILE}" "${EMAIL_TO}"
+    status="success"
 else
     BACKUP_API_URL="https://pvf3ozmmfl.execute-api.us-east-1.amazonaws.com/prod/v1/upload"
 
