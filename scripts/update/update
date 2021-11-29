@@ -99,7 +99,10 @@ if [[ "${update_type}" == "ota" ]]; then
   echo "Downloading Umbrel ${RELEASE}"
   mkdir -p "${UMBREL_ROOT}/.umbrel-${RELEASE}"
   cd "${UMBREL_ROOT}/.umbrel-${RELEASE}"
-  curl -L "https://github.com/getumbrel/umbrel/archive/$RELEASE.tar.gz" | tar -xz --strip-components=1
+  # Check if the GITHUB_REPO variable is set (default is: getumbrel/umbrel)
+  # https://stackoverflow.com/a/13864829/1657502
+  if [ -z ${GITHUB_REPO+x} ]; then GITHUB_REPO="getumbrel/umbrel"; fi
+  curl -L "https://github.com/$GITHUB_REPO/archive/$RELEASE.tar.gz" | tar -xz --strip-components=1
 fi
 
 # Copy over new release from path
