@@ -8,7 +8,7 @@ BACKUP_FOLDER_NAME="backup"
 BACKUP_FOLDER_PATH="${BACKUP_ROOT}/${BACKUP_FOLDER_NAME}"
 BACKUP_FILE="${BACKUP_ROOT}/backup.tar.gz.pgp"
 BACKUP_STATUS_FILE="${UMBREL_ROOT}/statuses/backup-status.json"
-EMAIL_CONFIG="email-config"
+EMAIL_CONFIG="${UMBREL_ROOT}/scripts/backup/email-config"
 
 check_dependencies () {
   for cmd in "$@"; do
