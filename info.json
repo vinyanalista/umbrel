@@ -1,6 +1,6 @@
 {
-    "version": "0.4.6",
-    "name": "Umbrel v0.4.6",
+    "version": "0.4.9",
+    "name": "Umbrel v0.4.9",
     "requires": ">=0.2.1",
-    "notes": "This version of Umbrel contains a bugfix for the Samourai Server app's connectivity issue. If you're facing an issue with it currently, please try re-installing the app again after the update.\n\nIf you face any difficulties while updating, please message us on Telegram: https://t.me/getumbrel"
+    "notes": "Umbrel 0.4.9 brings two-factor authentication (2FA) to add an extra layer of security to your Umbrel, LND 0.14.1, two brand new apps in the Umbrel App Store — Tallycoin Connect and Syncthing, updated apps, bug fixes, and more.\n\nIf you face any difficulties while updating, please message us on Telegram: https://t.me/getumbrel"
 }
